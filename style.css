@@ -13,23 +13,45 @@ body{
     justify-items: center;
 
 }
+.main-myStuff{
+    border-radius: 0 0 25px 25px;
+    background-color:#191D32;
+    width:1440px;
+
+}
 .myStuff{
-    margin: 0;
-    padding: 16px;
+    font-size: 30px;
+    margin: 10vh;
+    padding: 25px;
     display: flex;
     align-items: flex-start;
-    width:800px;
+    
     border-radius: 0 0 25px 25px;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content:space-around;
     background-color:#191D32;
 }
 .myStuff__header{
+    font-size: 50px;
     color: #F2F3D9;
 }
-@media screen and (min-width: 624px) {
+@media screen and (max-width: 425px) {
+    body{
+        background:#EE6352;
+    }
+    .myStuff{
+        font-size: 50px;
+        flex-direction: column;
+        justify-content:space-around;
+    }
+}
+@media screen and (max-width: 768px) {
     body{
         background:#119DA4;
+    }
+    .myStuff{
+        font-size: 30px;
+        flex-direction: column;
+        justify-content:space-around;
     }
 }
